@@ -1,0 +1,177 @@
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body {
+	margin: 0 auto;
+	color: #000;
+	background: #fff;
+	font: 12px/1 arial, helvetica, sans-serif;
+}
+/* General reset */
+h1,h2,h3,h4,h5,h6,p{
+	margin: 0;
+}
+img {
+	border: none;
+}
+a {
+	color: #000;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+ul {
+	margin: 0;
+	list-style: none;
+	padding: 0;
+}
+/* General settings */
+.container{
+	width: 1024px;
+	margin: 0 auto;
+}
+
+/*HEADER START*/
+.header{
+	height: 100px;
+	background: #353535;
+	color: #fff;
+	font-size: 16px;
+	position: relative;
+}
+.logo{
+	float: left;
+	margin-top: 40px;
+	font-weight: bold;
+}
+.logo a{
+	color: #fff;
+}
+.header-nav{
+	float: left;
+	margin-top: 40px;
+}
+.header-nav li{
+	display: inline-block;
+	margin: 0 10px;
+}
+.header-nav li a{
+	color: #fff;
+}
+.slicknav_menu{
+	display: none;
+}
+/*HEADER END*/
+
+/*MAIN START*/
+.inner-block{
+	height: 580px;
+	background: #0991a9;
+}
+.img-block{
+	float: left;
+	line-height: 0;
+}
+.img-block.w70{
+	width: 70%;
+}
+.img-block.w30{
+	width: 33.3333%;
+}
+.img-block img{
+	width: 100%;
+}
+.link{
+	float: left;
+	width: 30%;
+	height: 221px;
+	background: #bc3184;
+}
+.info{
+	height: 562px;
+	background: #ebebeb;
+	/*float: left;*/
+	overflow: hidden;
+	padding: 56px 24px 0 82px;
+}
+.info h3{
+	font-size: 30px;
+	color: #088ca5;
+	margin-bottom: 32px;
+}
+.info p{
+	font-size: 14px;
+	color: #515151;
+	margin-bottom: 46px;
+	line-height: 1.5;
+}
+.text-row{
+	width: 50%;
+	float: left;
+	padding-right: 63px;
+}
+/*MAIN END*/
+
+/*MEDIA*/
+@media (max-width: 1040px){
+	.container{
+		width: 750px;
+	}
+	.inner-block{
+		height: 548px;
+	}
+	.link{
+		height: 162px;
+	}
+}
+@media (max-width: 767px){
+	.container{
+		width: 620px;
+	}
+	.inner-block{
+		height: 348px;
+	}
+	.link{
+		height: 130px;
+	}
+	.img-block.smw100{
+		width: 100%;
+	}
+	.slicknav_menu{
+		display: block;
+		float: right;
+		margin-top: 25px;
+	}
+	.header-nav{
+		display: none;
+	}
+	.text-row.first{
+		width: 100%;
+	}
+	.text-row.second{
+		display: none;
+	}
+	.info{
+		height: 100%;
+	}
+}
+@media (max-width: 639px){
+	.container{
+		width: 320px;
+	}
+	.inner-block{
+		height: 176px;
+	}
+	.link{
+		height: 67px;
+	}
+	.info{
+		padding: 35px 29px 46px 35px;
+	}
+	.text-row{
+		padding-right: 0;
+	}
+}
