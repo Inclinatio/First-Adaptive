@@ -46,6 +46,7 @@ ul {
 	float: left;
 	margin-top: 40px;
 	font-weight: bold;
+	text-transform: uppercase;
 }
 .logo a{
 	color: #fff;
@@ -53,10 +54,12 @@ ul {
 .header-nav{
 	float: left;
 	margin-top: 40px;
+	text-transform: uppercase;
 }
 .header-nav li{
 	display: inline-block;
 	margin: 0 10px;
+	margin-left: 30px;
 }
 .header-nav li a{
 	color: #fff;
@@ -70,6 +73,27 @@ ul {
 .inner-block{
 	height: 580px;
 	background: #0991a9;
+	color: #fff;
+	padding-left: 7%;
+	padding-right: 30%;
+}
+.inner-block:before{
+	content: "";
+	vertical-align: middle;
+	display: inline-block;
+	height: 25%;
+}
+.inner-block p{
+	font-size: 60px;
+	margin-bottom: 7%;
+}
+.inner-block span{
+	font-size: 34px;
+	color: #a6d4de;
+}
+.inner-block span a{
+	color: #fff;
+	float: right;
 }
 .img-block{
 	float: left;
@@ -89,6 +113,17 @@ ul {
 	width: 30%;
 	height: 221px;
 	background: #bc3184;
+	text-align: center;
+}
+.link span a{
+	color: #fff;
+	font-size: 60px;
+}
+.link span a:before{
+	content: "";
+	vertical-align: middle;
+	display: inline-block;
+	height: 100%;
 }
 .info{
 	height: 562px;
@@ -123,6 +158,12 @@ ul {
 	.inner-block{
 		height: 548px;
 	}
+	.inner-block p{
+		font-size: 45px;
+	}
+	.inner-block span{
+		font-size: 25px;
+	}
 	.link{
 		height: 162px;
 	}
@@ -134,8 +175,17 @@ ul {
 	.inner-block{
 		height: 348px;
 	}
+	.inner-block p{
+		font-size: 37px;
+	}
+	.inner-block span{
+		font-size: 21px;
+	}
 	.link{
 		height: 130px;
+	}
+	.link span a{
+		font-size: 50px;
 	}
 	.img-block.smw100{
 		width: 100%;
@@ -143,7 +193,8 @@ ul {
 	.slicknav_menu{
 		display: block;
 		float: right;
-		margin-top: 25px;
+		/*margin-top: 25px;*/
+		text-transform: uppercase;
 	}
 	.header-nav{
 		display: none;
@@ -160,18 +211,47 @@ ul {
 }
 @media (max-width: 639px){
 	.container{
-		width: 320px;
+		width: 400px;
 	}
 	.inner-block{
 		height: 176px;
 	}
+	.inner-block p{
+		font-size: 24px;
+	}
+	.inner-block span{
+		font-size: 13px;
+	}
 	.link{
-		height: 67px;
+		height: 84px;
+	}
+	.link span a{
+		font-size: 40px;
 	}
 	.info{
 		padding: 35px 29px 46px 35px;
 	}
 	.text-row{
 		padding-right: 0;
+	}
+}
+@media (max-width: 479px){
+	.container{
+		width: 250px;
+	}
+	.inner-block p{
+		font-size: 15px;
+	}
+	.inner-block span{
+		font-size: 8px;
+	}
+	.link{
+		height: 53px;
+	}
+	.link span a{
+		font-size: 25px;
+	}
+	.info h3{
+		font-size: 19px;
 	}
 }
